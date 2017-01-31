@@ -4,28 +4,28 @@ class Zgloszenie {
 
 public:
 
-	float czasObslugi;
-	float czasPrzybycia;
+	double czasObslugi;
+	double czasPrzybycia;
 	bool obslugiwany;
 	Zgloszenie() {
 		index = 0;
-		czasObslugi = 0;
-		czasPrzybycia = 0;
+		czasObslugi = 0.000000;
+		czasPrzybycia = 0.000000;
 		obslugiwany = false;
 	}
-	Zgloszenie(float lambda, float mi) {
+	Zgloszenie(double lambda, double mi) {
 		index += 1;
 		czasObslugi = mi;
 		czasPrzybycia = lambda;
 		obslugiwany = false;
 	}
-	void updateCzasObslugi(float czas) {
+	void updateCzasObslugi(double czas) {
 		czasObslugi += czas;
 	}
-	void updateCzasPrzybycia(float czas) {
+	void updateCzasPrzybycia(double czas) {
 		czasPrzybycia += czas;
 	}
-	float getCzasObslugi() {
+	double getCzasObslugi() {
 		return czasObslugi;
 	}
 	bool getobslugiwany() {

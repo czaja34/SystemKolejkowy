@@ -7,21 +7,21 @@ using namespace std;
 
 class Sesja {
 private:
-	float lambda;
-	float mi;
-	float T;
+	double lambda;
+	double mi;
+	double T;
 	int L;
 	int iloscKanalow;
 
 
 public:
-	float getiloscKanalow() { return iloscKanalow; }
-	float getLambda() { return lambda; }
-	float getMi() { return mi; }
-	float getT() { return T; }
+	double getiloscKanalow() { return iloscKanalow; }
+	double getLambda() { return lambda; }
+	double getMi() { return mi; }
+	double getT() { return T; }
 	int getL() { return L; }
 
-	void setT(float time) { T -= time; }
+	void setT(double time) { T -= time; }
 	void setL(int l) { L = l; }
 
 public: Sesja() {
